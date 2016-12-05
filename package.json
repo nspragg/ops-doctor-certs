@@ -1,0 +1,38 @@
+{
+  "name": "ops-doctor-certs",
+  "version": "1.0.0",
+  "description": "Diagnostic to assert certificate for the number of days until expiry",
+  "main": "plugin.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint .",
+    "coverage": "istanbul cover _mocha -- -R dot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nspragg/ops-doctor-certs.git"
+  },
+  "author": "nspragg@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nspragg/ops-doctor-certs/issues"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "homepage": "https://github.com/nspragg/ops-doctor-certs",
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-config-iplayer-es6": "^1.3.0",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.1.0",
+    "sinon": "^1.17.6"
+  },
+  "eslintConfig": {
+    "extends": "iplayer-es6"
+  },
+  "dependencies": {
+    "@ibl/ops-doctor": "^1.4.0",
+    "certificate-expiry": "^1.0.0"
+  }
+}
